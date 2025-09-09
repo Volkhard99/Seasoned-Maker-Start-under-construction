@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +8,21 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px 0;
+            padding: 20px; /* Reduzierter Padding, um Scrollen zu vermeiden */
+            margin: 0;
+            display: flex; /* Flexbox für vertikale Zentrierung */
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh; /* Mindesthöhe des Viewports */
+            box-sizing: border-box; /* Padding wird in die Höhe einberechnet */
         }
         .container {
             max-width: 800px;
+            width: 90%; /* Verwendet eine relative Breite */
             margin: 0 auto;
+        }
+        h1 {
+            margin-bottom: 15px;
         }
         img {
             max-width: 100%;
@@ -20,15 +30,16 @@
             display: block;
             margin: 20px auto;
         }
+        p {
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Seasoned Maker</h1>
-        <p style="font-size: 2em; color: #FFA500;">&#x25CF;</p>
         <img src="wohnwagen.png" alt="Under Construction Caravan">
         <p style="font-size: 1.5em;">Website under construction - coming soon</p>
     </div>
 </body>
 </html>
-   
